@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import styles from '../../styles/bg.module.css';
+import Inv from './inventory';
+import styles from '../styles/bg.module.css';
 
 const LogsConsumedComponent = () => {
   const [logsConsumedData, setLogsConsumedData] = useState(null);
@@ -25,9 +26,13 @@ const LogsConsumedComponent = () => {
   }, []); // Run once on component mount
 
   return (
-    <div className={styles.gradientBackgroundForAdmin}>
+    <div>
+     
+
+    <div className={styles.gradientbg}>
     <div className='container-fluid mt-4'>
-      <h2>Refill logs</h2>
+
+      
       {logsConsumedData !== null ? (
         <table style={{ borderCollapse: 'collapse', width: '100%' }}>
           <thead>
@@ -48,7 +53,8 @@ const LogsConsumedComponent = () => {
       ) : (
         <p>Loading...</p>
       )}
-      <div></div>
+      <div><Inv/></div>
+    </div>
     </div>
     </div>
   );

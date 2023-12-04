@@ -9,6 +9,7 @@ import InvButton from './invbutton';
 import Addcon from './AddContainer';
 import Switch from './switch';
 import Scroll from './scrollableTable';
+import InvCard from './inventoryCard';
 
 
 function DateTimeComponent() {
@@ -123,6 +124,8 @@ export default function Dashboard({ user }) {
           <div style={{ textAlign: "center" }}>
        
             <h2>Refill Logs</h2>
+            <InvCard />
+            <h3>Water Gallons : 100 =========Consumed========</h3>
             <div style={{ marginTop: "20px" }}>
               
          
